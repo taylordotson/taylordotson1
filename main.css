@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+
+* {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 30ms linear;
+}
+
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: blur(5x);
+  filter: blur(5px);
+  opacity: 0;
+}
+
+.stuff {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*opacity: 0.8;*/
+}
+
+h1 {
+  font-family: "Slabo 27px", serif;
+  color: #fff;
+  font-size: 90px;
+  font-weight: 900;
+  text-shadow: 8px 8px 12px #000;
+  /*opacity: 0.8;*/
+  text-align: center;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+  text-shadow: 8px 8px 12px #000;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.about {
+  height: 100vh;
+  background-color: darkslategrey;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    z-index: 10;
+    background-color: palegoldenrod;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+}
+
+.logo {
+    background-color: transparent;
+    z-index: 100;
+    position: absolute;
+    left: 100px;
+    top: 0%;
+}
+
+  .navigation__checkbox {
+    display: none; }
+
+  .navigation__button {
+    background-color: #fff;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer; }
+
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: .5rem;
+    right: 1.1rem;
+    background-image: radial-gradient(#f3cf2d, #bb5729);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+  .navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+
+  .navigation__item {
+    margin: 1rem; }
+
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s; }
+    .navigation__link:link span, .navigation__link:visited span {
+      margin-right: 1.5rem;
+      display: inline-block; }
+
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem); }
+
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(80); }
+
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%; }
+
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .navigation__icon::before {
+      top: -.8rem; }
+    .navigation__icon::after {
+      top: .8rem; }
+
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem; }
+
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem; }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
+
+      .card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem; }
+    .card__side {
+      height: 52rem;
+      transition: all .8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side--front {
+        background-color: #fff; }
+      .card__side--back {
+        transform: rotateY(180deg); }
+        .card__side--back-1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        .card__side--back-2 {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        .card__side--back-3 {
+          background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+    .card:hover .card__side--front {
+      transform: rotateY(-180deg); }
+    .card:hover .card__side--back {
+      transform: rotateY(0); }
+    .card__picture {
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: screen;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      .card__picture--1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      .card__picture--2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      .card__picture--3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+    .card__heading {
+      font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: right;
+      color: #fff;
+      position: absolute;
+      top: 12rem;
+      right: 2rem;
+      width: 75%; }
+    .card__heading-span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      .card__heading-span--2 {
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      .card__heading-span--3 {
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__details {
+      padding: 3rem; }
+      .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto; }
+        .card__details ul li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem; }
+          .card__details ul li:not(:last-child) {
+            border-bottom: 1px solid #eee; }
+    .card__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      text-align: center; }
+    .card__price-box {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 0rem; }
+    .card__price-only {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+    .card__price-value {
+      font-size: 6rem;
+      font-weight: 100; }
+
+      .section-tours {
+    background-color: #f7f7f7;
+    padding: 1rem 0 1rem 0;
+    margin-top: 0rem; }
+
+    .section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    height: 50rem; }
+    .book__form {
+      width: 50%;
+      padding: 6rem; }
+
+      .logos{
+          width: 100vh;
+          height: 400px;
+              }
