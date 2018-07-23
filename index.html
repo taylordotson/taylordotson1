@@ -13,26 +13,7 @@
                 <img src="img/alpha-echo-logo-wh (1).png" class="logo" alt="logo" width="150px" height="90px">
 
 
-    <div id="top" class="container1">
-    
-        <div class="fixed">
-    
-            <div class="bg transition"></div>
 
-    
-            <ul>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-                <li>Four</li>
-                <li>Five</li>
-            </ul>
-    
-        </div>
-    
-
-    
-    </div>
 
 
 
@@ -50,6 +31,28 @@
             <h1>CREATE. CAPTIVATE. CONNECT.</h1>
         </div>
     </section>
+
+    <div id="top" class="container1">
+    
+        <div class="fixed">
+    
+            <div class="bg transition"></div>
+    
+    
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+            </ul>
+    
+        </div>
+    
+    
+    
+    </div>
+
             <div class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -69,10 +72,7 @@
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,10 +100,7 @@
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
                                     </ul>
                                 </div>
             
@@ -132,10 +129,7 @@
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
                                     </ul>
                                 </div>
             
@@ -180,24 +174,30 @@
                                         <div class="book__form">
                                             <form action="#" class="form">
                                                 <div class="u-margin-bottom-medium">
-                                                    <h2 class="heading-secondary">
-                                                        Sign Up for Emails
-                                                    </h2>
-                                                </div>
-                            
-                                                <div class="form__group">
-                                                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                                    <label for="name" class="form__label">Full name</label>
-                                                </div>
-                            
-                                                <div class="form__group">
-                                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                                    <label for="email" class="form__label">Email address</label>
-                                                </div>
-                            
-                            
-                                                <div class="form__group">
-                                                    <button class="btn btn--green">Sign Up &rarr;</button>
+                                                    <div id="form-main">
+                                                        <div id="form-div">
+                                                            <form class="form" id="form1">
+                                                    
+                                                                <p class="name">
+                                                                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                                                                        id="name" />
+                                                                </p>
+                                                    
+                                                                <p class="email">
+                                                                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                                                                </p>
+                                                    
+                                                                <p class="text">
+                                                                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                                                                </p>
+                                                    
+                                                    
+                                                                <div class="submit">
+                                                                    <input type="submit" value="SEND" id="button-blue" />
+                                                                    <div class="ease"></div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                 </div>
                                             </form>
                                         </div>
