@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #999792;
+  background: #302f2d;
 }
 
 .container1 {
@@ -45,7 +45,6 @@ ul {
   height: 200px;
   margin: -70px auto 0 auto;
   width: 500px;
-  color: white;
 }
 
 li {
@@ -54,7 +53,7 @@ li {
   margin: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: rgb(146, 143, 143);
+  color: rgb(245, 241, 241);
 }
 
 a {
@@ -381,7 +380,7 @@ p {
 
     .section-book {
     padding: 15rem 0;
-    background-image: linear-gradient(to top bottom, #9e9b93, #2c2a29); }
+    background-image: linear-gradient(to right bottom, #302f2d, #2c2a29); }
 
   .book {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
@@ -396,7 +395,7 @@ p {
       .logos{
           width: 100%;
           height: 100%;
-          background-color: #999792;
+          background-color: #302f2d;
               }
               .inside-logo {
                 display: flex;
@@ -413,6 +412,7 @@ p {
 
 
               .row {
+                background-color: #acacab;
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
