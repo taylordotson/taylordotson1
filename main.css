@@ -648,8 +648,8 @@ input:focus, textarea:focus {
     font-size: 1.6rem;
     transform: skewX(-12deg); }
     .story__shape {
-      width: 15rem;
-      height: 15rem;
+      width: 12rem;
+      height: 12rem;
       float: left;
       -webkit-shape-outside: circle(50% at 50% 50%);
       shape-outside: circle(50% at 50% 50%);
@@ -658,6 +658,7 @@ input:focus, textarea:focus {
       transform: translateX(-3rem) skewX(12deg);
       position: relative; }
     .story__img {
+      margin-bottom: 1rem;
       height: 100%;
       transform: translateX(-4rem) scale(1.4);
       backface-visibility: hidden;
